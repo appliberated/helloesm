@@ -4,12 +4,13 @@
  */
 
 /**
- * Hello
+ * Confirms that the browser supports ECMAScript Modules.
  * @returns {void}
  */
 export function helloEsm() {
-    console.log("helloESM");
-    document.getElementById("noJs").hidden = true;
-    document.getElementById("noEsm").hidden = true;
-    document.getElementById("yesEsm").hidden = false;
+    document.body.classList.add("body--yes-esm");
+    document.getElementById("emoji").innerText = "😎";
+    document.getElementById("sublead").innerText = "Congratulations! Your browser";
+    document.getElementById("lead").innerText = "can handle ECMAScript Modules";
+    document.title = "helloesm: Yes ECMAScript Modules";
 }

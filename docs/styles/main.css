@@ -1,8 +1,25 @@
+/*
+ *  helloesm. Copyright (c) 2018 HWALab. MIT License.
+ *  https://www.hwalab.com/helloesm/
+ */
+ 
+ html, body {
+    height: 100%;
+}
+
 body {
+    background: #F44336;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;  
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 p {
@@ -10,32 +27,25 @@ p {
     margin-bottom: 1rem;
 }
 
-[hidden] {
-    display: none !important;
-}
-
 .screen {
-    height: 100vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
-    align-items: center;
 }
 
-#noJS {
-    background: #F44336;
-}
-
-#noEsm {
+.body--no-esm {
     background: #FF9800;
 }
 
-#yesEsm {
+.body--yes-esm {
     background: #4CAF50;
 }
 
 .emoji {
-    font-size: 10rem;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
 }
 
 .sublead {
@@ -45,7 +55,11 @@ p {
 
 .lead {
     font-size: 5vw;
-    text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.footer {
+    text-align: center;
 }

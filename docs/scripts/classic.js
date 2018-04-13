@@ -7,8 +7,10 @@
 
 (function () {
     "use strict";
-    console.log("noEsm");
-    document.getElementById("noJs").hidden = true;
-    document.getElementById("noEsm").hidden = false;
-    document.getElementById("yesEsm").hidden = true;
+
+    document.body.classList.add("body--no-esm");
+    document.getElementById("emoji").innerText = "😞";
+    document.getElementById("sublead").innerText = "Your browser handles JavaScript, but";
+    document.getElementById("lead").innerText = "can't handle ECMAScript Modules";
+    document.title = "helloesm: No ECMAScript Modules";
 }());
