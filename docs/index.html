@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelloESM</title>
+
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <section class="screen" id="noJs">
+        <p>Oh My God!</p>
+        <p class="lead">Your browser can't even handle JavaScript!</p>
+    </section>
+
+    <section id="noEsm" class="screen" hidden>
+        <p class="emoji">😞</p>
+        <p class="sublead">Your browser handles JavaScript, but</p>
+        <p class="lead">can't handle EcmaScript Modules</p>
+    </section>
+
+    <section id="yesEsm" class="screen" hidden>
+        <p class="emoji">😎</p>
+        <p class="sublead">Congratulations! Your browser</p>
+        <p class="lead">can handle EcmaScript Modules</p>
+    </section>
+
+    <script type="module" src="/scripts/app.js"></script>
+    <script nomodule src="/scripts/classic.js"></script>
+</body>
+</html>

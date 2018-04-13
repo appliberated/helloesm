@@ -1,0 +1,44 @@
+{
+    "name": "helloesm",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "workbox": "workbox generateSW"
+    },
+    "keywords": [],
+    "author": "HWALab",
+    "license": "MIT",
+    "eslintConfig": {
+        "env": {
+            "browser": true,
+            "es6": true
+        },
+        "extends": "eslint:all",
+        "parserOptions": {
+            "sourceType": "module"
+        },
+        "rules": {
+            "array-element-newline": "off",
+            "arrow-parens": ["error", "as-needed"],
+            "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+            "dot-location": "off",
+            "func-style": "off",
+            "func-names": "off",
+            "capitalized-comments": ["error", "always", { "ignorePattern": "helloesm" }],
+            "linebreak-style": ["error", "windows"],
+            "max-len": ["error", 120],
+            "max-statements-per-line": ["error", { "max": 3 }],
+            "multiline-ternary": ["error", "always-multiline"],
+            "no-extra-parens": ["error", "all", { "nestedBinaryExpressions": false }],
+            "no-magic-numbers": ["error", { "ignore": [0, 1, 2] }],
+            "no-ternary": "off",
+            "no-console": "off",
+            "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
+            "one-var": "off",
+            "padded-blocks": "off",
+            "quote-props": ["error", "as-needed"],
+            "sort-keys": "off",
+            "space-before-function-paren": "off"
+        }
+    }
+}
