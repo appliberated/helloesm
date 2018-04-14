@@ -9,22 +9,27 @@
 
 body {
     background: #F44336;
+    display: flex;
+    flex-direction: column;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
+    line-height: 1.25;
 }
 
 a {
     color: inherit;
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+}
+
+abbr[title] {
     text-decoration: none;
 }
 
 p {
-    margin-top: 0;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .screen {
@@ -32,7 +37,11 @@ p {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    font-size: 2.5rem;
+    font-size: 10vmin;
     justify-content: center;
+    padding: 0 1rem;
+    text-align: center;
 }
 
 .body--no-esm {
@@ -44,22 +53,22 @@ p {
 }
 
 .emoji {
-    font-size: 5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.5vmin;
 }
 
 .sublead {
-    font-size: 4vw;
-    margin-bottom: 0;
+    font-size: 50%;
+    margin-bottom: 0.5rem;
 }
 
 .lead {
-    font-size: 5vw;
     font-weight: bold;
     margin-bottom: 0;
     text-transform: uppercase;
 }
 
 .footer {
+    font-size: 1.25rem;
+    font-size: 5vmin;
     text-align: center;
 }

@@ -13,4 +13,7 @@ export function helloEsm() {
     document.getElementById("sublead").innerText = "Congratulations! Your browser";
     document.getElementById("lead").innerText = "can handle ECMAScript Modules";
     document.title = "helloesm: Yes ECMAScript Modules";
+
+    // Update the theme-color meta tag to update the browser toolbar color
+    document.querySelector("meta[name=theme-color]").setAttribute("content", "#4CAF50");
 }
