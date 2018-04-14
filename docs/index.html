@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>helloesm: no JavaScript!</title>
+    <title>helloesm - Hello ECMAScript Modules PWA - Test your browser </title>
+    <meta name="description" content="Can your browser handle ECMAScript Modules (built-in, native JavaScript modules)? Does your browser help apps get better, lighter, and easier to maintain?">
 
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/main.css">
 
+    <link rel="manifest" href="/manifest.webmanifest">
     <meta name="theme-color" content="#CCCCCC">
 </head>
 
@@ -21,12 +23,23 @@
     </main>
 
     <footer class="footer">
-        <p>a <abbr title="Hello World App">HWA</abbr> by <a href="https://www.hwalab.com/helloesm/" target="_blank">HWALab</a>
+        <p>a
+            <abbr title="Hello World App">HWA</abbr> by
+            <a href="https://www.hwalab.com/helloesm/" target="_blank" rel="noopener">HWALab</a>
         </p>
     </footer>
 
     <script type="module" src="/scripts/app.js"></script>
     <script nomodule src="/scripts/classic.js"></script>
+
+    <script>
+        // Register service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
 </body>
 
 </html>
