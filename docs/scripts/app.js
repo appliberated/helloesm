@@ -3,6 +3,6 @@
  *  https://www.hwalab.com/helloesm/
  */
 
-import {helloEsm} from "/scripts/hello.js";
+import helloEsm from "/scripts/hello.js";
 
 helloEsm();

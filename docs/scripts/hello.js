@@ -7,7 +7,7 @@
  * Confirms that the browser supports ECMAScript Modules.
  * @returns {void}
  */
-export function helloEsm() {
+export default function helloEsm() {
     document.body.classList.add("body--yes-esm");
     document.getElementById("emoji").innerText = "😎";
     document.getElementById("sublead").innerText = "Congratulations! Your browser";

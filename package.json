@@ -1,7 +1,7 @@
 {
     "name": "helloesm",
     "version": "1.0.0",
-    "description": "",
+    "description": "Can your browser handle ECMAScript Modules (aka native JavaScript modules)?",
     "scripts": {
         "workbox": "workbox generateSW"
     },
