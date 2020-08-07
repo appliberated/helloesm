@@ -1,6 +1,6 @@
 {
     "name": "Hello ECMAScript Modules",
-    "short_name": "helloesm",
+    "short_name": "HelloESM",
     "description": "Can your browser handle ECMAScript Modules (aka native JavaScript modules)?",
     "start_url": "/",
     "display": "fullscreen",

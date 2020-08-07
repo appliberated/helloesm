@@ -1,6 +1,6 @@
 /*
- *  helloesm. Copyright (c) 2018 HWALab. MIT License.
- *  https://www.hwalab.com/helloesm/
+ *  HelloESM. Copyright (c) 2018-2020 Appliberated. MIT License.
+ *  https://www.appliberated.com/helloesm/
  */
 
 /**
@@ -12,7 +12,7 @@ export default function helloEsm() {
     document.getElementById("emoji").innerText = "😎";
     document.getElementById("sublead").innerText = "Congratulations! Your browser";
     document.getElementById("lead").innerText = "can handle ECMAScript Modules";
-    document.title = "helloesm: Yes ECMAScript Modules";
+    document.title = "HelloESM: Yes ECMAScript Modules";
 
     // Update the theme-color meta tag to update the browser toolbar color
     document.querySelector("meta[name=theme-color]").setAttribute("content", "#4CAF50");

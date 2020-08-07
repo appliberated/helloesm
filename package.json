@@ -6,7 +6,7 @@
         "workbox": "workbox generateSW"
     },
     "keywords": [],
-    "author": "HWALab",
+    "author": "Appliberated",
     "license": "MIT",
     "eslintConfig": {
         "env": {
